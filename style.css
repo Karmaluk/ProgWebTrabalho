@@ -1,18 +1,23 @@
+
+/* deixando o grid sem borda */
 body{
   margin: 0;
   padding: 0;
 }
 
+/* definindo o tamanho do grid e espaço entre borda da tela e contexto */
 .container {
   display: grid;
   padding: 5px;
 }
 
+/* cor e margem do h1 */
 h1 {
   color: #594D3E;
   margin: 3px;
 }
 
+/* cor, margem e tamanho h2 */
 h2 {
   color: #594D3E;
   margin: 3px;
@@ -20,6 +25,7 @@ h2 {
   height: 28px;
 }
 
+/* onde começa e termina o cabeçalho com cor e centralizado */
 header {
   grid-row-start: 1;
   grid-row-end: 1;
@@ -29,12 +35,16 @@ header {
   text-align: center;
 }
 
+
+/* localização do menu no grid */
 .menu {
   grid-column-start: 1;
   grid-column-end: 4;
   justify-content: space-evenly;
   background-color: #BFBBB4;
 }
+
+/* localização do conteudo das paginas e cores */
 .principal {
   grid-column-start: 2;
   grid-column-end: 4;
@@ -45,11 +55,14 @@ header {
   color: #8C7E6C;
 }
 
+/* fundo e cores do aside */
 .wrapper {
   background-color: #BFBBB4;
   color: #8C7E6C;
 }
 
+
+/* definindo cores e localização do rodapé no grid */
 footer {
   grid-row-start: 4;
   grid-column-start: 1;
@@ -61,15 +74,20 @@ footer {
   color: #F2EFE9;
 }
 
+
+/* como sera vizualizado os cards com links */
 .card {
   display: flex;
   flex-flow: row wrap;
 }
 
+/* retirando o estilo da lista do menu */
 ul {
   list-style-type: none;
 }
 
+
+/* retirando o sublinhado padrao de link e adicionando cor e borda */
 a,
 a:link {
   text-decoration: none;
@@ -78,15 +96,21 @@ a:link {
   color: #8C7E6C;
 }
 
+
+/* fazendo lista de menu ficar alinhada */
 li {
   float: left;
 }
 
+
+/* mudando estilo do link quando o mouse esta em cima */
 a:hover {
   background-color: #594D3E;
   color: #8C7E6C;
 }
 
+
+/* borda e estilo do texto com portfolio */
 .img {
   border: 1px solid #594D3E;
   padding: 0.3rem;
@@ -96,6 +120,8 @@ a:hover {
   text-align: center;
   }
 
+
+  /* definindo tamanho e borda pra foto pessoal */
   .minhafoto {
     height: 200px;
     width: 200px;
@@ -104,15 +130,21 @@ a:hover {
     border-color: #594D3E;
   }
 
+
+  /* tamanho do botao de enviar no formulario */
   .botao {
     width: 55px;
     height: 25px;
   }
 
+
+  /* alinhando texto no card com link */
   .link {
     padding-top: 20px;
   }
 
+
+  /* mudando cor do texto dentro do card com link */
   .estudos {
     color: #8C7E6C;
   }
@@ -120,6 +152,7 @@ a:hover {
 /* media query para dispositivos móveis */
 @media only screen and (max-width: 600px) {
 
+  /* todas as partes do grid ficam em uma coluna */
   .container {
     display: flex;
     flex-direction: column;
