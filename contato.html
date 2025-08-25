@@ -8,45 +8,49 @@
 </head>
 
 <body>
-  <header class="container">
-      <h1 style="color: white; text-align: center;">Biografia Leonardo da Vinci</h1>
-      <br>
-  </header>
+    
+    <header class="container">
+        <h1>Vinicius Karmaluk</h1>
+    </header>
+  
+    <nav class="container menu">
+        <ul>
+            <li><a href="index.html">Sobre mim</a></li>
+            <li><a href="formacao.html">Formação</a></li>
+            <li><a href="portfolio.html">Portfólio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+  
+    <div class="container wrapper">
+        <aside class="container imagem">
+            <img src="img/minhafoto.jpeg" class="minhafoto">
+            <div class="container infos">
+                <h2>Ocupação</h2>Supervisor de Visitor Services
+                <br><br>
+                <h2>Idade</h2>35 anos
+                <br><br><br>
+            </div>
+        </aside> 
 
-  <nav class="container menu">
-      <ul>
-          <li><a href="index.html">Sobre mim</a></li>
-          <li><a href="formacao.html">Formação</a></li>
-          <li><a href="portfolio.html">Portfólio</a></li>
-          <li><a href="contato.html">Contato</a></li>
-      </ul>
-  </nav>
-
-  <div class="container wrapper">
-      <aside class="imagem">
-          <img src="leonardo-da-vinci.png">
-          <div class="infos">
-              <p><strong>Ocupação</strong> Pintor italiano</p>
-              <p>
-                  <strong>Data do Nascimento</strong>
-                  15/04/1452
-              </p>
-              <p><strong>Data da Morte</strong>02/05/1519 (aos 67 anos)</p>
-              <br><br><br>
-          </div>
-      </aside> 
-
-      <section class="principal">
-        <h1>
-          Contato
-      </h1>
-      
+      <section class="container principal">
+        <h1>Contato</h1>
+            <p>Para entrar em contato basta preencher este formulario com seu nome, email e 
+                mensagem e clicar no botao enviar. Responderei o mais rapido possivel.<br>Obrigado!</p>
+        <div class="container form">
+            <p>Nome<br><input type="text" name="Nome" id="nome" placeholder="Digite seu nome" required></p>
+            <p>Email<br><input type="text" name="Email" id="email" placeholder="Digite seu email" required></p>
+            <p>Mensagem<br><textarea name="Mensagem" rows="5" cols="25" id="mensagem" placeholder="Digite aqui sua mensagem..." required></textarea></p>
+            <input type="submit" value="Enviar" class="botao">
+        </div>
       </section>
   </div>
+
   <footer class="container">
-      <h1> Desenvolvido para fins educacionais</h1>
+      <h3> Desenvolvido por Vinicius Karmaluk</h3>
   </footer>
   </footer>
   </div>
+</div>
 </body>
 </html>
